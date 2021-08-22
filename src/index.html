@@ -6,27 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.min.css" />
 </head>
 
 <body>
-  <div class="main">
-    <div class="header">
-      <img class=logo src="assets/images/Vector.svg">
-      <p class="header__text"> Телефон <a class="header__tel" href="tel:8(800)-123-12-12">8(800)-123-12-12</a>
-      </p>
-      <img class="header__img" src="./assets/images/Фигура 679.png">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__wrapper">
+          <a class="header__logo-link" href="#">
+            <img class="header__logo" src="./assets/images/Vector.svg" alt="">
+          </a>
+          <a class="phone-city" href="tel:88001231212">Москва</a>
+          <div class="phone">
+            <span>Телефон:</span>
+            <a href="tel:88001231212" class="phone-link">8(800)-123-12-12</a></div>
+        </div>
+        <a class="header__user" href="#">
+          <img class="header__user-img" src="./assets/images/Фигура 679.png" alt="">
+        </a>
+      </div>
+
+
     </div>
-    <div class="main__wrapper">
-      <h1 class="main__title">Эксклюзивная <span class="main__title--orange"> фотосессия </span>
-        при полете
-        на вертолете</h1>
-      <img class="main__img" src="./assets/images/Rectangle 6.2.png">
-      <button class="main__button">
-        <p class="main__button-text">Забронировать место </p>
-      </button>
-    </div>
-  </div>
+
+  </header>
+
   <section class="content">
     <h2 class="content__subtitle">Фотосессия в вертолете</h2>
     <img class="content__img" src="./assets/images/64379962_2432401366817580_2945589636799915800_n.png">

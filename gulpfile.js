@@ -27,7 +27,7 @@ const path = {
   src: {
     html: srcPath + "*.html",
     js: srcPath + "assets/js/*.js",
-    css: srcPath + "assets/sass/*.sass",
+    css: srcPath + "assets/sass/**/*.sass",
     images:
       srcPath +
       "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
@@ -84,7 +84,7 @@ function html(cb) {
 
 // CSS
 function css(cb) {
-  return src(srcPath + "assets/sass/main.sass") // return src(path.src.css, {base: srcPath + 'assets/sass/'})
+  return src(srcPath + "assets/sass/style.sass") // return src(path.src.css, {base: srcPath + 'assets/sass/'})
     .pipe(sourcemaps.init())
     .pipe(
       plumber({
@@ -134,7 +134,7 @@ function css(cb) {
 
 // Для быстрой компиляции CSS во время разработки
 function cssWatch(cb) {
-  return src(srcPath + "assets/sass/main.sass") // если нужно компилировать 1 файл, то return src(srcPath + 'assets/sass/main.sass')
+  return src(srcPath + "assets/sass/style.sass") // если нужно компилировать 1 файл, то return src(srcPath + 'assets/sass/main.sass')
     .pipe(sourcemaps.init())
     .pipe(
       plumber({
