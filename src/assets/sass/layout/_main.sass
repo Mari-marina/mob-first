@@ -1,0 +1,57 @@
+.main
+  background-image: url(./../..//./assets/images/main-img.jpg)
+  background-size: cover
+  background-position: center;
+  .container
+    @extend %container 
+  &__inner
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 655px 
+  &__title
+    padding-bottom: 57px
+    color: $primaryColor
+    @include text(700, 32px, 39px) 
+    max-width: 264px
+    @media screen and(min-width: 768px)
+      @include text(700, 40px, 49px)
+      max-width: 590px
+    @media screen and(min-width: 1280px)
+      max-width: 890px
+    span
+      color: $accentColor
+  &__btn
+    color: $primaryColor
+    max-width: 275px
+    height: 68px
+    border: 3px solid $primaryColor
+    border-radius: 3px
+    width: 100%
+    background: transparent
+    margin-top: 14px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25)
+    @media screen and(min-width: 768px)
+      max-width: 304px
+      height: 68px  
+  &__price-box 
+    background-image: url(.././images/Rectangle6.2.png)
+    width: 200px
+    height: 86px
+    background-repeat: no-repeat
+    @media screen and(min-width: 768px)
+      width: 224px
+      height: 96px 
+  &__price-label
+    @include text(400, 18px, 151.16%)
+    color: $primaryColor
+  &__price
+    @include text(800, 30px, 151.16%)
+    color: $primaryColor
+  &__price-wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__wrapper
+    display: flex        
+    justify-content: center
