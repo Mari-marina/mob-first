@@ -1,0 +1,74 @@
+.comment
+  &__container
+    @extend %container
+  &__title
+    text-align: center
+    @include text(400, 26px, 39px)
+    padding-top: 40px
+    padding-bottom: 15px
+    position: relative
+    @media screen and (min-width: 768px)
+      text-align: left
+      @include text(500, 20px, 29px)
+  &__title::before
+    display: none
+    @media screen and (min-width: 768px)
+      content: ":"
+      position: absolute
+      top: 41px
+      left: 86px
+      display: block  
+  &__wrap
+    margin: 35px 0 30px 0
+    display: flex
+    align-items: center
+  &__name
+    margin: 35px 0 6px
+    @include text(500, 16px, 19px)    
+  &__text--small
+    margin-bottom: 7px
+    @include text(400, 14px, 21px)
+  &__person
+    margin-left: 18px  
+  &__block:nth-child(4)
+    display: none
+    @media screen and (min-width: 576px)
+      display: block
+  &__text--light,
+  &__data
+    @include text(400, 14px, 21px)
+    color: #B3B3B3
+    margin-bottom: 44px
+  &__text--light
+    margin: 0 0 14px 21px
+    position: relative
+    @media screen and (min-width: 768px)
+      position: absolute
+      margin-top: -66px
+      margin-left: 338px
+  &__text
+    @include text(400, 14px, 21px)
+    @media screen and (min-width: 768px)
+      @include text(400, 16px, 24px) 
+  &__text--light::before
+    content: ""
+    position: absolute
+    background: url(./../images/Vector2.2.svg)
+    top: 3px
+    left: -20px
+    width: 15px
+    height: 15px
+  &__text
+    margin-bottom: 20px
+  &__block
+    border: 2px solid #E5E5E5
+  &__excerpt
+    @include text(500, 17px, 25px)
+    color: $linkColor
+    text-align: center
+    margin-top: 40px
+  &__image
+    margin-top: 35px
+    @media screen and (min-width: 768px) 
+      width: 101px
+    

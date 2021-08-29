@@ -10,8 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  -->
+
   <link rel="stylesheet" href="./assets/css/style.min.css" />
-  <link rel="stylesheet" href="assets/sass/style.css" />
+  <!-- <link rel="stylesheet" href="assets/sass/style.css" /> -->
 </head>
 
 <body>
@@ -180,7 +186,7 @@
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <div class="locations__address">
 
-
+        <!-- 
         <div class="locations__slider locations__middle">
           <div class="locations__slides">
             <input type="radio" name="r" class="r1" checked>
@@ -202,6 +208,11 @@
             <label for="r2" class="locations__bar"></label>
             <label for="r3" class="locations__bar"></label>
           </div>
+        </div> -->
+        <div class="slide">
+          <div>your content</div>
+          <div>your content</div>
+          <div>your content</div>
         </div>
         <div class="locations__person">
           <img class="locations__img" src="./assets/images/Ellipse.png" alt="">
@@ -295,23 +306,39 @@
         </div>
       </div>
       <div class="footer__bottom">
+        <div class="footer__bottom-block"></div>
         <div class="footer__bottom-payment">
           <a class="footer__bottom-link" href=""><img class="footer__bottom-img" src="./assets/images/MC.png"></a>
           <a class="footer__bottom-link" href=""><img class="footer__bottom-img" src="./assets/images/VISA.png"></a>
         </div>
+
+        <select class="footer__language text" inline-block="">
+          <option class="footer__language-text text">RU</option>
+          <option class="footer__language-text text">EN</option>
+        </select>
+
+
         <div class="footer__bottom-wrapper">
           <p class="footer__bottom-text"> Тех. поддержка: <a class="hfooter__bottom-tel"
               href="tel:8(800)700-00-00">8(800)700-00-00</a>
           </p>
           <p class="footer__bottom-copy">© 2018 HELYFLY. All Rights Reserved.</p>
         </div>
-        <p class="footer__bottom-desc">RU</p>
       </div>
+    </div>
     </div>
   </footer>
 
 
+  <!-- <script type="text/javascript" src="./assets/js/main.js"></script>
 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js" defer></script> -->
+  <script src="./assets/js/script.js" defer></script>
 
 
 

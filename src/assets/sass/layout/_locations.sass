@@ -1,0 +1,64 @@
+.locations
+  &__map
+    padding-top: 45px
+    width: 100%
+    height: 420px
+  &__slide1,
+  &__slide2,
+  &__slide3
+    @include text(700, 30px, 44px)
+    color: $borderColor
+    background-color: $accentColor
+    width: 66px
+    height: 66px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+  &__slides
+    width: 70px
+    height: 70px
+    overflow: hidden
+    border: solid 2px #fff
+  &__middle
+    position: relative
+    top: 50%
+  &__navigatoin
+    position: absolute
+    bottom: 16px
+    lefy 50%
+    transform: translateX(-50%)
+    display: flex
+  &__bar
+    height: 8px
+    width: 30px
+    margin: 6px
+    cursor: pointer
+    background-color: #ddd
+    opacity: 0.5
+    border-radius: 10px
+    transition: all 0.4s easa
+  &__bar:hover
+    opacity: 0.8
+    transform: scale(1.1) 
+  input[name="r"]
+    position: absolute
+    visibility: hidden
+  &__person
+    display: flex
+    justify-content: center
+  &__img
+    width: 67px
+    height: 67px
+  &__subtitle
+    @include text(500, 16px, 19px)
+    margin-bottom: 5px
+  &__desc-top
+    @include text(400, 14px, 21px)
+    margin-bottom: 7px
+  &__link
+    @include text(500, 14px, 21px)
+    color: $linkColor
+  &__wrap
+    width: 150px
+    margin-left: 11px    

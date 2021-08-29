@@ -9,10 +9,9 @@
   "author": "Marina",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2",
-    "sass": "^1.38.0",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssbeautify": "^3.0.0",
@@ -26,6 +25,8 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "heroku": "^7.56.1",
-    "node-normalize-scss": "^8.1.2"
+    "node-normalize-scss": "^8.1.2",
+    "sass": "^1.38.0",
+    "slick-carousel": "^1.8.1"
   }
 }
