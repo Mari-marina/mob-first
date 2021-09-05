@@ -59,12 +59,9 @@ const jsFiles = [srcPath + "assets/js/*.js"];
 
 // TASKS
 // объявляем функции под сборки (все пути относительные)
-// !!!!!!! Сделано для Deploy  проекта на GitHub pages
-var ghPages = require("gulp-gh-pages");
 
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(ghPages());
-});
+// !!!!!!! Сделано для Deploy  проекта на GitHub pages
+
 // Локальный сервер
 function serve() {
   browserSync.init({
