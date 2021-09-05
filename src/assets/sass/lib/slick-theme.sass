@@ -107,7 +107,20 @@ $slick-opacity-not-active: 0.25 !default
         right: -25px
     
     &:before 
-        content: $slick-prev-character
+        // content: $slick-prev-character
+        content: ""
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        background-image: url(../images/map-arrow.svg);
+        position: absolute;
+        top: -160%;
+        z-index: 10;
+        width: 11px;
+        height: 19px;
+        color: #c7c7c7;
+        font-size: 0;
+        transform: rotate(180deg)
         [dir="rtl"] & 
             content: $slick-next-character
         
@@ -121,7 +134,19 @@ $slick-opacity-not-active: 0.25 !default
         right: auto
     
     &:before 
-        content: $slick-next-character
+        // content: $slick-next-character
+        content: ""
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        background-image: url(../images/map-arrow.svg);
+        position: absolute;
+        top: -160%;
+        z-index: 10;
+        width: 11px;
+        height: 19px;
+        color: #c7c7c7;
+        font-size: 0;
         [dir="rtl"] & 
             content: $slick-prev-character
         

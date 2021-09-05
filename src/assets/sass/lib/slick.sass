@@ -100,10 +100,17 @@
     display: none
 
 .slick-initialized .slick-slide 
-    
     display: flex
-  
     justify-content: center
-   
     align-items: center
     margin-bottom: 5px
+.slider  
+    &__block
+        display: flex
+        flex-direction: column
+    &__text
+        @include text(500, 16px, 23px)
+        margin: 20px 0 10px
+    &__word
+        @include text(400, 14px, 20px)
+        margin-bottom: 20px           
