@@ -28,5 +28,8 @@
     "node-normalize-scss": "^8.1.2",
     "sass": "^1.38.0",
     "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4"
   }
 }
