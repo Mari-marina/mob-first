@@ -1187,6 +1187,7 @@ ul {
     flex-direction: row;
     align-items: center;
     margin-left: 30px;
+    margin-top: 18px;
 }
 
 .locations__content {
@@ -1213,6 +1214,18 @@ ul {
         font-weight: 500;
         font-size: 20px;
         line-height: 29px;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    .comment__title {
+        padding-top: 130px;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .comment__title {
+        padding-top: 150px;
     }
 }
 
