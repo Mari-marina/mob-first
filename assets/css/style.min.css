@@ -466,6 +466,14 @@ ul {
   @media screen and (max-width: 1024px) {
     .content__text {
       margin: 10px; } }
+  @media screen and (min-width: 576px) {
+    .content__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px; } }
+  @media screen and (min-width: 769px) {
+    .content__text {
+      margin-right: 30px; } }
 
 .content__list {
   font-weight: 500;
@@ -952,9 +960,12 @@ ul {
     .comment__title::before {
       content: ":";
       position: absolute;
-      top: 41px;
+      top: 40px;
       left: 86px;
       display: block; } }
+  @media screen and (min-width: 768px) and (min-width: 1279px) {
+    .comment__title::before {
+      top: 149px; } }
 
 .comment__wrap {
   margin: 35px 0 30px 0;
