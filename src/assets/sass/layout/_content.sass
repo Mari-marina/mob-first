@@ -11,12 +11,16 @@
     text-align: center
     margin-bottom: 14px
     height: max-content
-  &__img
+  &__wrap,
+  .c-video
     min-width: 290px
     width: 100% 
     grid-area: 1/2/span 3/2
     @media screen and(max-width: 1024px)
       grid-area: auto
+  &__video
+    width: 554px
+    height: 374px  
   &__text
     @include text(400, 14px, 20px)
     margin-top: 30px

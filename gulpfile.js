@@ -32,6 +32,7 @@ const path = {
       srcPath +
       "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
     fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+    video: srcPath + "assets/video/**/*.{mp4}",
   },
   // В эти папки будут собираться файлы
   build: {
@@ -40,6 +41,7 @@ const path = {
     css: distPath + "assets/css/",
     images: distPath + "assets/images/",
     fonts: distPath + "assets/fonts/",
+    video: distPath + "assets/video/",
   },
   // За этими файлами мы будем следить. При изменении этих файлов бдет перезагружаться браузер
   watch: {
@@ -50,6 +52,7 @@ const path = {
       srcPath +
       "assets/images/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
     fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+    video: srcPath + "assets/video/**/*.{mp4}",
   },
   clean: "./" + distPath,
 };
