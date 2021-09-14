@@ -449,13 +449,19 @@ ul {
   margin-bottom: 14px;
   height: max-content; }
 
-.content__img {
+.content__wrap,
+.content .c-video {
   min-width: 290px;
   width: 100%;
   grid-area: 1/2/span 3/2; }
   @media screen and (max-width: 1024px) {
-    .content__img {
+    .content__wrap,
+    .content .c-video {
       grid-area: auto; } }
+
+.content__video {
+  width: 554px;
+  height: 374px; }
 
 .content__text {
   font-weight: 400;
@@ -1401,5 +1407,70 @@ ul {
 
 .slick-list {
   padding-top: 56px; }
+
+.video {
+  width: 100%; }
+
+.c-video {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  overflow: hidden; }
+
+.c-video:hover .controls {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0); }
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(100%) translateY(-5px);
+  -webkit-transform: translateY(100%) translateY(-5px);
+  -moz-transform: translateY(100%) translateY(-5px);
+  -ms-transform: translateY(100%) translateY(-5px);
+  -o-transform: translateY(100%) translateY(-5px);
+  transition: all 0.2s; }
+
+.buttons button {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer; }
+
+.buttons button:before {
+  content: "";
+  position: absolute;
+  background: url(./../images/Vector4.png);
+  top: -40px;
+  right: 20px;
+  width: 16px;
+  height: 23px; }
+
+.buttons button.play:before {
+  content: "";
+  background: url(./../images/Vector4.png); }
+
+.buttons button.pause:before {
+  content: "";
+  background: url(./../images/pause.png); }
+
+.orange-bar {
+  height: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black; }
+
+.orange-juice {
+  height: 10px;
+  width: 1px;
+  background-color: orangered; }
 
 /*# sourceMappingURL=style.min.css.map */
