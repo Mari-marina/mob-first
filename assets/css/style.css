@@ -572,14 +572,16 @@ ul {
     height: max-content;
 }
 
-.content__img, .content__wrap {
+.content__wrap,
+.content .c-video {
     min-width: 290px;
     width: 100%;
     grid-area: 1/2/span 3/2;
 }
 
 @media screen and (max-width: 1024px) {
-    .content__img, .content__wrap {
+    .content__wrap,
+    .content .c-video {
         grid-area: auto;
     }
 }
@@ -1880,7 +1882,7 @@ ul {
 .buttons button:before {
     content: "";
     position: absolute;
-    background: url(./Vector4.png);
+    background: url(./../images/Vector4.png);
     top: -40px;
     right: 20px;
     width: 16px;
@@ -1889,13 +1891,12 @@ ul {
 
 .buttons button.play:before {
     content: "";
-    background: url(.././images/Vector4.png);
+    background: url(./../images/Vector4.png);
 }
 
 .buttons button.pause:before {
     content: "";
-    background: url(./pause.png);
-    width: 23px;
+    background: url(./../images/pause.png);
 }
 
 .orange-bar {
@@ -1908,6 +1909,6 @@ ul {
 
 .orange-juice {
     height: 10px;
-    width: 100px;
+    width: 1px;
     background-color: orangered;
 }
