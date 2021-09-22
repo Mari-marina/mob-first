@@ -1838,13 +1838,9 @@ ul {
     padding-top: 56px;
 }
 
-.video {
-    width: 100%;
-}
-
 .c-video {
     width: 100%;
-    max-width: 600px;
+    max-height: 374px;
     position: relative;
     overflow: hidden;
 }
