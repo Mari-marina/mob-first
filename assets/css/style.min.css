@@ -1409,12 +1409,14 @@ ul {
   padding-top: 56px; }
 
 .video {
-  overflow: hidden;
-  height: 400px; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .video {
+      overflow: hidden;
+      height: 374px; } }
 
 .c-video {
   width: 100%;
-  max-height: 374px;
   position: relative;
   overflow: hidden; }
 
